@@ -37,7 +37,7 @@ public abstract class Pessoa extends Entidade {
     private String cpf;
 
     @NotNull
-    @Size(min = 15, max = 15)
+    @Size(min = 10, max = 15)
     @Pattern(regexp = "^\\([1-9]{2}\\) (?:[2-8]|9[1-9])[0-9]{3}\\-[0-9]{4}$", message = "Deve estar no formato (99) 99999-9999")
     @Column(nullable = false, length = 15)
     private String telefone;
